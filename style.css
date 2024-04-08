@@ -1,0 +1,340 @@
+@font-face {
+  font-family: chapman;
+  src: url("./font/Chapman.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+li {
+  list-style-type: none;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 10px;
+}
+header {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20px;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding-inline: 2rem;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+.homeImg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.container {
+  height: 100vh;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 40px;
+  background-color: #13b67a;
+  color: #fff;
+  border: none;
+  border-radius: 5px 0px;
+  cursor: pointer;
+  transition: transform 2s, width 0.3s, height 0.3s;
+}
+button:hover {
+  background-color: green;
+  transform: scale(1.1);
+}
+input {
+  border-radius: 5px 0px;
+  border: 1px solid #333;
+}
+select {
+  background-color: #efefef;
+  border-radius: 5px 0px;
+}
+label {
+  font-size: medium;
+  text-align: center;
+}
+nav ul li a:hover{
+  background-color:red;
+  font-size: larger;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.book-section {
+  display: flex;
+  margin: 1rem;
+  opacity: 0.5;
+  text-align: center;
+  background-color: slategrey;
+  border-radius: 20px 5px;
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  padding: 2rem;
+  color: #fff;
+}
+.book-img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.food-h1 {
+  text-align: center;
+  margin: 1rem;
+}
+.food-box {
+  position: relative;
+  padding: 10px 10px;
+  width: 50%;
+  height: 70%;
+  box-shadow: 0px 0px 15px 2px rgb(186, 182, 182);
+  margin: 4rem;
+  padding: 1rem;
+  padding-right: 5rem;
+}
+.food-box::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  border-radius: 50%;
+  animation: Ani-circle 200s linear infinite;
+  background-image: url("https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg");
+  background-size: cover;
+}
+@keyframes Ani-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.food-button {
+  border-radius: 2rem 0px;
+}
+.choose-food {
+  word-spacing: 2px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+.food-h4 {
+  text-align: center;
+  font-family: chapman;
+  color: #006e4b;
+}
+.food-box-p {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+.food-colum {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+}
+.food-img-x {
+  width: 300px;
+  height: 300px;
+  border: 4px solid black;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #333;
+  margin-right: 5%;
+}
+.product-list {
+  display: flex;
+  gap: 3vw;
+  flex-direction: row;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.box1 img {
+  width: 200px;
+  height: 200px;
+}
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  gap: 2.5rem;
+  padding-top: 4rem;
+}
+.about-img {
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+}
+.about-para {
+  box-shadow: 0px 0px 15px 2px rgb(186, 182, 182);
+  padding: 2rem;
+}
+.about-p {
+  color: silver;
+  text-align: center;
+  margin-top: 1rem;
+}
+.about-h2{
+  text-align: center;
+}
+
+.skills {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skills span {
+  color: #201d1d;
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 1px 0px rgb(21, 18, 18);
+}
+.service-section{
+  background-color: rgb(241, 246, 246);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+pre{
+  background-color:#fff;
+  width: 100%;
+  padding-bottom: 1.2rem;
+}
+.service-h1{
+  padding-top: 1rem;
+  text-align: center;
+  padding: 1vw 1vw;
+  font-size: 2rem;
+  color: black;
+  background-color: #5c575705;
+  transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+.service-h1:hover{
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.74);
+}
+.service-cantainer{
+  display: flex;
+  gap: 4vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  padding: 3vh 1vw;
+}
+.service-card{
+  width: 20vw;
+  height: 40vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.service-card img {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+}
+
+.service-card h3 {
+  margin-top: 4vh;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(15, 14, 14);
+}
+.service-btn{
+  border-radius: 1rem 0rem;
+  transition: transform 0.5s;
+}
+.service-btn:hover{
+  transform: scale(1.1);
+  background-color: #13b67a;
+}
+.be-partner{
+  background-color: #ffffff;
+  padding-block: 2rem;
+}
+.partner-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.partner-img{
+  width: 400px;
+  height: 300px;
+  /* border-radius: 5px; */
+}
+.partner-h1{
+  text-align: center;
+  color: black;
+  padding-bottom: 2rem;
+
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
