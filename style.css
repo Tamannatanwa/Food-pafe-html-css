@@ -20,7 +20,7 @@ a {
   text-decoration: none;
   color: #333;
 }
-li {
+.header-li{
   list-style-type: none;
 }
 .logo {
@@ -46,7 +46,7 @@ nav {
   background: #f4f4f4;
   padding-inline: 2rem;
 }
-ul {
+.header-ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,16 +118,21 @@ nav ul li a:hover{
 }
 .book-section {
   display: flex;
-  margin: 1rem;
-  opacity: 0.5;
-  text-align: center;
-  background-color: slategrey;
-  border-radius: 20px 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   position: absolute;
   top: 65%;
   left: 20%;
-  padding: 2rem;
-  color: #fff;
+  text-align: center;
+  /* color: #fff;  */
+  font-size: larger;
+}
+.book-card{
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 15px 0px;
+  opacity: 0.6;
 }
 .book-img {
   width: 200px;
@@ -313,24 +318,55 @@ pre{
   background-color: #13b67a;
 }
 .be-partner{
-  background-color: #ffffff;
+  background-color:aliceblue;
   padding-block: 2rem;
 }
 .partner-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+  margin-inline: 5rem;
+  padding-top: 4rem;
 }
 .partner-img{
   width: 400px;
   height: 300px;
-  /* border-radius: 5px; */
 }
 .partner-h1{
   text-align: center;
   color: black;
+}
+.dis-flex-tab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.partner-con-h1{
+  text-align:center;
+  padding-bottom: 1rem;
+}
+.partner-con-flex{
+  display: flex;
+  box-shadow: 0px 0px 15px 2px rgb(186, 182, 182);
+  padding: 2rem;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+.partner-h4{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.partner-p{
+  color: rgb(186, 182, 182);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-bottom: 0.5rem;
+}
+.partner-list{
+  font-size: smaller;
   padding-bottom: 2rem;
-
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 footer {
   background-color: #333;
